@@ -1,4 +1,4 @@
-import React from "react"
+
 
 export default function Die(props) {
     const styles = {
@@ -10,7 +10,7 @@ export default function Die(props) {
             style={styles}
             onClick={props.holdDice}
         >
-            <h2 className="text-3xl">{props.value}</h2>
+            <h3 className="text-3xl">{props.value}</h3>
         </div>
     )
 }
