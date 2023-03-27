@@ -33,10 +33,7 @@ export default function App() {
         return newDice
     }
     
-/**
- * Challenge: Allow the user to play a new game when the
- * button is clicked and they've already won
- */
+
     
     function rollDice() {
         if(!tenzies) {
@@ -69,16 +66,16 @@ export default function App() {
     ))
     
     return (
-        <main>
+        <main className="flex flex-col items-center justify-between h-full p-4 mt-16 ">
             {tenzies && <Confetti />}
-            <h1 className="m-0 text-4xl">Tenzies</h1>
-            <p className="mt-0 font-normal text-center">Roll until all dice are the same. 
+            <h1 className="m-auto text-4xl font-bold ">Tenzies</h1>
+            <p className="items-center p-4 mt-0 text-lg font-normal text-center text-gray-700">Roll until all dice are the same. 
             Click each die to freeze it at its current value between rolls.</p>
-            <div className="grid grid-cols-5 gap-5 mb-10">
+            <div className="grid grid-cols-5 mx-auto mb-10 gap-14">
                 {diceElements}
             </div>
             <button 
-                className="w-40 h-12 text-xl text-white bg-indigo-600 border-none rounded-md cursor-pointer" 
+                className="w-40 h-12 m-auto text-xl text-white bg-indigo-600 border-none rounded-md shadow-inner cursor-pointer hover:bg-black shadow-black" 
                 onClick={rollDice}
             >
                 {tenzies ? "New Game" : "Roll"}

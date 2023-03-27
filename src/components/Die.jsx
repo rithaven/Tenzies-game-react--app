@@ -6,7 +6,7 @@ export default function Die(props) {
     }
     return (
         <div 
-            className="flex items-center justify-center w-12 h-12 rounded-sm shadow-md cursor-pointer" 
+            className="flex items-center justify-center w-16 h-16 rounded-md shadow-md cursor-pointer" 
             style={styles}
             onClick={props.holdDice}
         >
