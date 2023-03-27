@@ -75,7 +75,7 @@ export default function App() {
                 {diceElements}
             </div>
             <button 
-                className="w-40 h-12 m-auto text-xl text-white bg-indigo-600 border-none rounded-md shadow-inner cursor-pointer hover:bg-black shadow-black" 
+                className="w-40 m-auto text-xl text-white bg-indigo-600 border-none rounded-md shadow-inner cursor-pointer h-14 hover:bg-black shadow-black" 
                 onClick={rollDice}
             >
                 {tenzies ? "New Game" : "Roll"}
